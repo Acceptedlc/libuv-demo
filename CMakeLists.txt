@@ -19,3 +19,6 @@ target_link_libraries(idle_handle ${LIBUV_LIB})
 
 add_executable(swap_child_process src/command/child_process/swap_child_process.cc)
 target_link_libraries(swap_child_process ${LIBUV_LIB})
+
+add_executable(tcp_echo_server src/command/tcp/echo_server.cc)
+target_link_libraries(tcp_echo_server ${LIBUV_LIB})
