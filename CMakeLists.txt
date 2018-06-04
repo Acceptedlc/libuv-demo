@@ -4,6 +4,9 @@ project(libuv-test)
 
 set(CMAKE_CXX_STANDARD 11)
 
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wwritable-strings -Wall -Wno-long-long -pedantic -fPIC")
+
+
 set(LIBUV_DIR "${CMAKE_CURRENT_SOURCE_DIR}/deps/libuv-v1.9.1/")
 set(LIBUV_LIB "${LIBUV_DIR}/out/Debug/libuv.a")
 
